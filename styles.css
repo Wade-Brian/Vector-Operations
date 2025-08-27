@@ -1,0 +1,117 @@
+:root {
+    --bg: #0b1220;
+    --card: #121a2b;
+    --text: #e8eefc;
+    --muted: #a8ba6ff;
+    --accent: #6aa6ff;
+    --border: #25324a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, segoe UI, Roboto, Helvetica, Arial, "Apple color Emoji", "Segoe UI Emoji";
+    background: radial-gradient(1200px 600px at 80%-10%, #1a2a52 0%, var(--bg)60%) fixed, var(--bg);
+    color: var(--text);
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0 0 20px;
+    letter-spacing: .2px
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0 0 12px;
+    color;
+    var(--accent);
+}
+
+.card {
+    background: linear-gradient(180deg, #141e33 0%, var(--card) 100%);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .35)
+}
+
+p {
+    color: var(--muted);
+    margin: 0 0 12px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+label {
+    display: grid;
+    gap: 6px;
+    font-size: 0.95rem;
+}
+
+input {
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: #0e1525;
+    color: var(--text);
+    outline: none;
+}
+
+button {
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: #183153;
+    color: var(--text);
+    cursor: pointer;
+    transition: transform .06s ease, box-shadow.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .25);
+
+    button:active {
+        transform: translateY(0);
+    }
+}
+
+
+.output {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 12px;
+    background: #0d1423;
+    border: 1px dashed var(--border);
+    word-break: break-word;
+}
+
+footer {
+    margin-top: 28px;
+    text-align: center;
+    color: var(--muted);
+}
+
+code {
+    background: #0e172b;
+    padding: 2px 6px;
+    border-radius: 6px;
+}
